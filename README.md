@@ -9,6 +9,12 @@ Official implementation of "Linear Convergence of Hessian-Free Federated Meta-Le
 
 This repository contains the official source code, experiment configurations, and supplementary mathematical proofs for the paper: **"Linear Convergence of Hessian-Free Federated Meta-Learning via Swarm-Regularized ADMM."**
 
+> **⚠️ UNDER REVIEW NOTICE**
+>
+> This manuscript is currently under peer review. To comply with journal policies and accommodate ongoing revisions, the complete execution pipeline (including the full `main.py` orchestrator and baseline integrations) will be officially released upon the paper's acceptance. 
+> 
+> *Please note: The current codebase is provided for structural and mathematical reference. It is subject to active modifications, optimizations, and updates during the review process.*
+
 ## 📖 Overview
 
 Federated Meta-Learning (FML) enables rapid model adaptation across distributed networks but is traditionally bottlenecked by the intractable computation of second-order Hessian matrices. While first-order approximations bypass these costs, they inject persistent structural biases and suffer catastrophic client drift under severe non-IID regimes.
@@ -33,7 +39,9 @@ The repository includes implementations for our proposed method and six state-of
 6. **FedConv** (2024) - Federated Convergence Acceleration
 7. **FedDE** (2024) - Federated Dual-Ensemble
 
-*(Note: The hesitation parameter is strictly fixed at $h_i = 1$ across all relevant local loss formulations to ensure optimization stability, as detailed in the manuscript).*
-
----
-
+@article{sharma2026hfsram,
+  title={Linear Convergence of Hessian-Free Federated Meta-Learning via Swarm-Regularized ADMM},
+  author={Sharma, Vaibhav and Pardasani, Kamal Raj},
+  journal={Submitted to IEEE Signal Processing Letters},
+  year={2026}
+}
